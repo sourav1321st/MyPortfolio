@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HYPERLINK</title>
+    <style>
+
+
+        div#mydiv{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border: 1px solid black;
+            position: relative;
+            animation-name: moving-box;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+            
+        div#mydiv1{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border: 1px solid black;
+            position: relative;
+            animation-name: sliding-box;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes moving-box {
+            0% {background-color: brown; left: 300px; top: 300px;}
+            20% {background-color: rgb(136, 220, 10); left: 400px;top: 400px;}
+            45% {background-color: rgb(8, 157, 226); left: 400px;top: 300px;}
+            70% {background-color: rgb(184, 14, 218); left: 300px;top: 400px;}
+            100% {background-color: brown; left: 300px; top: 300px;}
+
+        }
+
+        @keyframes sliding-box {
+            0% {background-color: brown; left: 300px; top: 300px;}
+            20% {background-color: rgb(8, 157, 226); left: 400px;top: 300px;}
+            45% {background-color: rgb(136, 220, 10); left: 400px;top: 400px;}
+            70% {background-color: rgb(184, 14, 218); left: 300px;top: 400px;}
+            100% {background-color: brown; left: 300px; top: 300px;}
+
+        }
+
+        div{
+            width: 300px;
+            height: 200px;
+            background-color: aqua;
+            border: 1px solid black;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mydiv1"></div>
+    <div id="mydiv"></div>
+    <div id="div" >box3</div>
+</body>
+</html>
